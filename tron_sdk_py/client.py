@@ -1,14 +1,14 @@
 from typing import Union
 import grpc
 
-from tron.proto.api.api_pb2_grpc import WalletStub, WalletSolidityStub
-from tron.proto.api.api_pb2 import EmptyMessage, AccountAddressMessage, BytesMessage
+from tron_sdk_py.proto.api.api_pb2_grpc import WalletStub, WalletSolidityStub
+from tron_sdk_py.proto.api.api_pb2 import EmptyMessage, AccountAddressMessage, BytesMessage
 
-from tron.proto.core.chain_pb2 import Transaction
-from tron.proto.core.response_pb2 import TransactionExtention
+from tron_sdk_py.proto.core.chain_pb2 import Transaction
+from tron_sdk_py.proto.core.response_pb2 import TransactionExtention
 
-from tron.types import ADDR, HEX
-from tron.keys import private_key_to_address, sign_message
+from tron_sdk_py.types import ADDR, HEX
+from tron_sdk_py.keys import private_key_to_address, sign_message
 
 
 class TronClient(object):
@@ -37,7 +37,7 @@ class TronClient(object):
 
     @classmethod
     def nile(cls, private_key=None):
-        return cls(private_key, endpoint="47.252.3.238:50051", solidity_endpoint="47.252.3.238:50061")
+        return cls(private_key, endpoint="grpc.nile.trongrid.io:50051", solidity_endpoint="grpc.nile.trongrid.io:50061")
 
     def sign(self, txn: Union[Transaction, TransactionExtention]) -> Transaction:
         if not self.private_key:
@@ -53,7 +53,7 @@ class TronClient(object):
 
 
 if __name__ == "__main__":
-    from tron.proto.core.contract_pb2 import TransferContract
+    from tron_sdk_py.proto.core.contract_pb2 import TransferContract
 
     client = TronClient.nile(private_key=HEX('3333333333333333333333333333333333333333333333333333333333333333'))
     req = TransferContract()

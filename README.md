@@ -1,13 +1,13 @@
-# tron-sdk-py
+# tron_sdk_py-sdk-py
 
 The TRON gRPC API SDK in Python.
 
 ## Demo
 
 ```py
-from tron.proto.core.contract_pb2 import TransferContract
-from tron.client import TronClient
-from tron.types import HEX, ADDR
+from tron_sdk_py.proto.core.contract_pb2 import TransferContract
+from tron_sdk_py.client import TronClient
+from tron_sdk_py.types import HEX, ADDR
 
 client = TronClient.nile(
     private_key=HEX('3333333333333333333333333333333333333333333333333333333333333333')

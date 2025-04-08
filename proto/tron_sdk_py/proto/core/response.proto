@@ -1,9 +1,9 @@
 syntax = "proto3";
 package protocol;
 
-import "tron/proto/core/common.proto";
-import "tron/proto/core/chain.proto";
-import "tron/proto/core/contract.proto";
+import "tron_sdk_py/proto/core/common.proto";
+import "tron_sdk_py/proto/core/chain.proto";
+import "tron_sdk_py/proto/core/contract.proto";
 
 message BlockExtention {
   repeated TransactionExtention transactions = 1;

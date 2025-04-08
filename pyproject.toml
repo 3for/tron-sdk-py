@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "tron"
+name = "tron_sdk_py"
 version = "0.1.0"
 description = "TRON-SDK-PY"
 authors = ["TRON Devs <coredevs@tron.network>"]

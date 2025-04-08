@@ -1,6 +1,6 @@
 #!/bin/bash
 
-python -m grpc_tools.protoc -Iproto \
-    -I /usr/local/Cellar/protobuf/3.13.0/include \
+python3 -m grpc_tools.protoc -Iproto \
+    -I /usr/local/include/google/protobuf/ \
     --python_out=./ --grpc_python_out=./ \
-    proto/tron/proto/api/api.proto proto/tron/proto/core/*
+    proto/tron_sdk_py/proto/api/api.proto proto/tron_sdk_py/proto/core/*

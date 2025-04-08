@@ -1,8 +1,8 @@
 import ecdsa  # type: ignore
 import hashlib
 
-from tron.types import HEX, ADDR
-from tron.crypto import keccak256
+from tron_sdk_py.types import HEX, ADDR
+from tron_sdk_py.crypto import keccak256
 
 
 def sign_message(private_key: bytes, message: bytes) -> HEX:

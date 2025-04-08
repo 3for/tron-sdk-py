@@ -1,11 +1,11 @@
-from tron.proto.api.api_pb2 import EmptyMessage # , AccountAddressMessage, BytesMessage
-from tron.proto.core.contract_pb2 import TransferContract
-from tron.client import TronClient
-from tron.types import HEX, ADDR
+from tron_sdk_py.proto.api.api_pb2 import EmptyMessage # , AccountAddressMessage, BytesMessage
+from tron_sdk_py.proto.core.contract_pb2 import TransferContract
+from tron_sdk_py.client import TronClient
+from tron_sdk_py.types import HEX, ADDR
 
 client = TronClient(
-    endpoint="47.252.3.238:50051",
-    solidity_endpoint="47.252.3.238:50061",
+    endpoint="grpc.nile.trongrid.io:50051",
+    solidity_endpoint="grpc.nile.trongrid.io:50061",
     private_key=HEX('3333333333333333333333333333333333333333333333333333333333333333'),
 )
 

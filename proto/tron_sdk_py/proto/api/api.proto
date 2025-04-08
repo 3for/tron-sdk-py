@@ -1,10 +1,10 @@
 syntax = "proto3";
 package protocol;
 
-import "tron/proto/core/common.proto";
-import "tron/proto/core/chain.proto";
-import "tron/proto/core/contract.proto";
-import "tron/proto/core/response.proto";
+import "tron_sdk_py/proto/core/common.proto";
+import "tron_sdk_py/proto/core/chain.proto";
+import "tron_sdk_py/proto/core/contract.proto";
+import "tron_sdk_py/proto/core/response.proto";
 
 service Wallet {
   // Transactions:
