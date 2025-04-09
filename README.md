@@ -1,4 +1,4 @@
-# tron_sdk_py-sdk-py
+# tron-sdk-py
 
 The TRON gRPC API SDK in Python.
 
