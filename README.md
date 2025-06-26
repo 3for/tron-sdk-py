@@ -5,7 +5,7 @@ The TRON gRPC API SDK in Python.
 ## Demo
 
 ```py
-from tron_sdk_py.proto.core.contract_pb2 import TransferContract
+from tron_sdk_py.proto.core.contract.balance_contract_pb2 import TransferContract
 from tron_sdk_py.client import TronClient
 from tron_sdk_py.types import HEX, ADDR
 

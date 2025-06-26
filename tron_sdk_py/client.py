@@ -2,10 +2,10 @@ from typing import Union
 import grpc
 
 from tron_sdk_py.proto.api.api_pb2_grpc import WalletStub, WalletSolidityStub
-from tron_sdk_py.proto.api.api_pb2 import EmptyMessage, AccountAddressMessage, BytesMessage
+from tron_sdk_py.proto.api.api_pb2 import EmptyMessage
 
-from tron_sdk_py.proto.core.chain_pb2 import Transaction
-from tron_sdk_py.proto.core.response_pb2 import TransactionExtention
+from tron_sdk_py.proto.core.Tron_pb2 import Transaction
+from tron_sdk_py.proto.api.api_pb2 import TransactionExtention
 
 from tron_sdk_py.types import ADDR, HEX
 from tron_sdk_py.keys import private_key_to_address, sign_message
@@ -53,7 +53,7 @@ class TronClient(object):
 
 
 if __name__ == "__main__":
-    from tron_sdk_py.proto.core.contract_pb2 import TransferContract
+    from tron_sdk_py.proto.core.contract.balance_contract_pb2 import TransferContract
 
     client = TronClient.nile(private_key=HEX('3333333333333333333333333333333333333333333333333333333333333333'))
     req = TransferContract()

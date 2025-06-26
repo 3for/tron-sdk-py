@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "tron_sdk_py"
-version = "0.1.0"
+version = "0.3.0"
 description = "TRON-SDK-PY"
 authors = ["TRON Devs <coredevs@tron.network>"]
 license = "GPL-3.0-only"
@@ -13,6 +13,7 @@ pycryptodome = "3.9.8"
 eth_abi = "^2.1.1"
 protobuf = "^3.13.0"
 grpcio = "^1.31.0"
+googleapis-common-protos = "^1.70.0"
 
 [tool.poetry.dev-dependencies]
 grpcio-tools = "1.31.0"
